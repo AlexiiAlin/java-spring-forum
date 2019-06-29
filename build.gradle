@@ -14,7 +14,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
-group = 'com.plkpiotr'
+group = 'com'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -24,6 +24,7 @@ repositories {
 
 
 dependencies {
+    compile('javax.xml.bind:jaxb-api:2.3.0')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.hibernate:hibernate-java8')
